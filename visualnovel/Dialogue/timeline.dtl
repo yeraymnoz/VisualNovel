@@ -44,7 +44,7 @@ Francesco: ¿Debería esconderme allí?
 	Francesco: ¡Éramos hermanos!
 	leave Francesco
 	join Voices center
-	Voices: No había otra opción, quiería traicionarnos...
+	Voices: No había otra opción, quería traicionarnos...
 	leave Voices
 	join Francesco center
 	Francesco: ¿Por qué no me detuve?
