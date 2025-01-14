@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
+run/main_scene="res://Scenes/VisualNovel.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,7 +22,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Francesco": "res://Dialogue/Francesco.dch"
+"Francesco": "res://Dialogue/Francesco.dch",
+"Mario": "res://Dialogue/Mario.dch",
+"Voices": "res://Dialogue/Voices.dch"
 }
 directories/dtl_directory={
 "timeline": "res://Dialogue/timeline.dtl"
@@ -29,6 +32,9 @@ directories/dtl_directory={
 layout/style_list=["res://Dialogue/Estilo.tres"]
 layout/default_style="res://Dialogue/Estilo.tres"
 glossary/default_case_sensitive=true
+variables={
+"Cabaña": ""
+}
 
 [editor_plugins]
 

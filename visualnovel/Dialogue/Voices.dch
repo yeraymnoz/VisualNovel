@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.3125, 0.0842285, 0.0842285, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Normal",
+"description": "",
+"display_name": "Voices",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Normal": {
+"export_overrides": {
+"image": "\"res://Sprites/Provisional/Fran2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+}
+},
+"scale": 1.0
+}

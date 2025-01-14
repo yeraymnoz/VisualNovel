@@ -1,3 +1,87 @@
 [background arg="res://Sprites/Provisional/Carretera.jpg" fade="0.0"]
+Tras descubrir que él lo mató, Francesco corre por una carretera en el bosque...
+...mientras intenta escapar de la policía y de las voces de su cabeza.
 join Francesco left
-Francesco: Hola que tal?
+Francesco: Necesito esconderme o me atraparán.
+Francesco: Eso de allí parece una cabaña abandonada, tal vez me sirva...
+Francesco: ¿Debería esconderme allí?
+- Sí, me servirá temporalmente
+	[background arg="res://Sprites/Provisional/Casa.jpg" fade="0.0"]
+	leave Francesco
+	join Voices right
+	Voices: Aquí ganaremos algo de tiempo...
+	leave Voices
+	join Francesco leftmost
+	Francesco: Mario...
+	Francesco: Siento todo lo que ha pasado.
+	Francesco: Al menos...
+	Francesco: ...tengo nuestra foto juntos para recordarte.
+	leave Francesco
+	join Voices center
+	Voices: Deberiamos destruirla...
+	Voices: Iba a delatarnos.
+	leave Voices
+	join Francesco center
+	Francesco: ¿Qué hago con la foto?
+	- Guardarla para recordar a Mario
+	- Quemarla por lo que iba a hacernos
+	leave Francesco
+	En la lejanía comienza a escucharse las sirenas de la policía.
+	join Francesco center
+	Francesco: Se están acercando, ¿Qué debería hacer?
+	- Entregarme, y pagar por lo que he hecho
+	- Seguir huyendo
+		jump SeguirHuyendo
+- No
+	label SeguirHuyendo
+	[background arg="res://Sprites/Provisional/Carretera.jpg" fade="0.0"]
+	leave Francesco
+	Francesco continúa huyendo por la carretera
+	join Francesco center
+	Francesco: Mario...
+	Francesco: ¿Cómo llegamos a esto?
+	Francesco: Éramos amigos...
+	Francesco: ¡Éramos hermanos!
+	leave Francesco
+	join Voices center
+	Voices: No había otra opción, quiería traicionarnos...
+	leave Voices
+	join Francesco center
+	Francesco: ¿Por qué no me detuve?
+	Francesco: ¿Por qué lo hice?
+	leave Francesco
+[wait time="1.0"]
+[background arg="res://Sprites/Provisional/Casa.jpg" fade="0.0"]
+join Mario right
+Mario: ¡No podemos seguir así, Francesco!
+Mario: Esto se nos ha ido de las manos...
+Mario: Ya hay demasiada sangre.
+join Francesco left
+Francesco: ¿Y que propones que hagamos?
+Francesco: Ahora ya no podemos echarnos atrás.
+Mario: Pero...
+Mario: No podemos seguir con esto.
+join Voices center
+Voices: Pretende traicionarnos, ¿Debemos matarlo?
+- Sí
+- Sí
+leave Voices
+leave Mario
+leave Francesco
+[wait time="1.0"]
+[background arg="res://Sprites/Provisional/Carretera.jpg" fade="0.0"]
+join Francesco center
+Francesco: Todo fue por estas malditas voces...
+Francesco: No se que hacer, estoy muy confuso ahora mismo.
+[wait time="0.3"]
+Francesco: Creo que debería entregarme y pagar por lo que he hecho.
+leave Francesco
+join Voices center
+Voices: Ni hablar, debemos escapar. Él se lo merecía...
+leave Voices
+join Francesco center
+Francesco: O tal vez debería acabar con todo esto...
+Francesco: ¿Qué hago?
+- Entregarme a la policía
+- Seguir huyendo
+- Acabar con todo
